@@ -9,10 +9,13 @@ jobs:
     steps:
       - name: Echo text
         run: echo "Hello, world!"
+    steps:
+      run: mkdir govi
+      run: ls -la
 
   list-job:
     runs-on: ubuntu-latest
     steps:
       - name: list 
         run: ls -la
-        
+
